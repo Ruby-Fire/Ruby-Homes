@@ -1,0 +1,29 @@
+.search-box {
+    border: 3px solid orange;
+    border-radius: 5px;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    top: 27rem;
+    min-height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background: white;
+    gap: 1rem;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 7px;
+}
+
+.search-box button {
+    padding: 10px;
+    background: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
