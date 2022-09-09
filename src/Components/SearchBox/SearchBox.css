@@ -1,14 +1,14 @@
 .search-box {
     border: 3px solid orange;
     border-radius: 5px;
-    width: 50%;
+    width: 55%;
     position: absolute;
     left: 25%;
-    top: 27rem;
+    top: 28.5rem;
     min-height: 5rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     padding: 1rem;
     background: white;
     gap: 1rem;
