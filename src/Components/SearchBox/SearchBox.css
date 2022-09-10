@@ -1,6 +1,4 @@
 .search-box {
-    border: 3px solid orange;
-    border-radius: 5px;
     width: 55%;
     position: absolute;
     left: 25%;
@@ -9,7 +7,7 @@
     display: flex;
     align-items: center;
     padding: 1rem;
-    background: #0d1723;
+    background: white;
     gap: 1rem;
 }
 
@@ -25,7 +23,7 @@
     background: orange;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
     font-weight: 600;
     cursor: pointer;
 }
