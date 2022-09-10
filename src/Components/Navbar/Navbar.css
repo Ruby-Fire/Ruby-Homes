@@ -2,7 +2,7 @@ nav {
     display: flex;
     align-items: center;
     padding: 1.2rem;
-    background-color: #003173;
+    background-color: #0d1723;
     border-bottom: 2px solid orange;
 }
 
@@ -19,14 +19,16 @@ nav h1 {
     margin: 2rem;
     color: white;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .register {
     padding: 10px 15px;
     font-weight: 600;
-    background-color: #003173;
+    background-color: #0d1723;
     color: white;
     border: 1px solid orange;
+    cursor: pointer;
 }
 
 .sign-in {
@@ -35,4 +37,5 @@ nav h1 {
     font-weight: 600;
     border: none;
     background-color: white;
+    cursor: pointer;
 }

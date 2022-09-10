@@ -8,15 +8,16 @@
     min-height: 5rem;
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
     padding: 1rem;
-    background: white;
+    background: #0d1723;
     gap: 1rem;
 }
 
 .search-box input {
     flex: 1;
     padding: 7px;
+    outline: none;
+    cursor: pointer;
 }
 
 .search-box button {
@@ -26,4 +27,5 @@
     border: none;
     border-radius: 5px;
     font-weight: 600;
+    cursor: pointer;
 }

@@ -1,5 +1,7 @@
 import "./HeroSection.css";
 import SearchBox from "../SearchBox/SearchBox";
+import Banner from "../Banner/Banner";
+import Home from "../../Assets/home.jpg"
 
 const HeroSection = () => {
     return ( 
@@ -18,11 +20,12 @@ const HeroSection = () => {
                         </div>
 
                         <div className="img-section">
-                            <img src="" alt="" />
+                            <img src={Home} alt="" />
                         </div>
                     </div>
                     <SearchBox/>
                 </div>
+                <Banner/>
             </div>
         </div>
      );
