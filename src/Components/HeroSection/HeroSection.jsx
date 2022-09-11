@@ -11,7 +11,7 @@ const HeroSection = () => {
                     <div className="about">
                         <div className="about-text">
                             <h1>
-                                Buy or Rent your dream home at the best price.
+                                Buy or Rent your dream space at the best price.
                             </h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                                 Aspernatur minus, et rem quae saepe dicta, exercitationem 
