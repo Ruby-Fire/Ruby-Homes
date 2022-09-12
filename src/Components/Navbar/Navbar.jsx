@@ -1,16 +1,17 @@
 import "./Navbar.css";
+import {Link} from "react-router-dom";
 
 const Navbar = () => {
     return ( 
         <nav>
-            <h1>RUBYREALTY</h1>
+            <Link to="/"><h1>RUBYREALTY</h1></Link>
             <div className="nav-list">
-                <a href="#">Rent</a>
-                <a href="#">For Landlords</a>
-                <a href="#">Contact Us</a>
+                <Link to="/rent">Rent</Link>
+                <Link to="/landlord">For Landlords</Link>
+                
             </div>
             <div className="nav-buttons">
-                <button className="register">Register</button>
+                <Link to="/register"><button className="register">Register</button></Link>
                 <button className="sign-in">Sign in</button>
             </div>
         </nav>
