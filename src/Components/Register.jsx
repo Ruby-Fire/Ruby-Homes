@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Fade } from "react-awesome-reveal";
 
 const Container = styled.div`
     display: flex;
@@ -43,22 +44,29 @@ const Container = styled.div`
 
 const Register = () => {
     return ( 
+        <Fade direction="left">
         <Container>
             <form action="post">
                 <h1>Sign Up</h1>
                 <label>First Name</label>
                 <input type="text" />
+
                 <label>Last Name</label>
                 <input type="text" />
+
                 <label>Username</label>
                 <input type="text" />
+
                 <label>Gender</label>
                 <input type="text" />
+
                 <label>Phone No.</label>
                 <input type="text" />
+
                 <button>Sign Up</button>
             </form>
         </Container>
+        </Fade>
      );
 }
  

@@ -1,11 +1,12 @@
 import styled from "styled-components";
+import { Fade } from "react-awesome-reveal";
 
 const Steps = () => {
 
     const Container = styled.div`
         min-height: 70vh;
         text-align: center;
-        padding: 2rem;
+        padding: 4rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -47,6 +48,7 @@ const Steps = () => {
         <Container>
             <h1>How RubyRealty Works</h1>
             <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, corrupti lupti woopty.</h5>
+            <Fade direction="up">
             <Steps>
             <h2>01</h2>
             <div>
@@ -54,7 +56,9 @@ const Steps = () => {
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium explicabo nostrum commodi unde ipsam fugiat?</p>
             </div>
             </Steps>
+            </Fade>
 
+            <Fade direction="up">
             <Steps>
             <h2>02</h2>
             <div>
@@ -62,7 +66,9 @@ const Steps = () => {
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium explicabo nostrum commodi unde ipsam fugiat?</p>
             </div>
             </Steps>
+            </Fade>
 
+            <Fade>
             <Steps>
             <h2>03</h2>
             <div>
@@ -70,6 +76,7 @@ const Steps = () => {
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium explicabo nostrum commodi unde ipsam fugiat?</p>
             </div>
             </Steps>
+            </Fade>
         </Container>
      );
 }
