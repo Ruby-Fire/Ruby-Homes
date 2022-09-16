@@ -1,0 +1,52 @@
+.resuits-review{
+    display: flex;
+    justify-content: center;
+    border: 2px  solid #e5e5e5;
+    border: radius 5px;
+    padding: 10px;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.imgSelector{
+    width: 200px;
+    height: 200px;
+    
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 2;
+}
+.title{
+    font-size: 20px;
+    color: #0d1723;
+}
+.hours{
+    font-size: 12px;
+}
+.aparament{
+    font-weight: bold;
+}
+.price-range{
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+}
+.Available-aparments{
+    font-size: 15px;
+}
+.ReBtn{
+   font-weight: 500;
+  color: white;
+   background-color: #0d1723;
+   font-weight: bold;
+   width: 100%;
+   padding: 10px 5px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+
