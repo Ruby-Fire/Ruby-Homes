@@ -1,0 +1,101 @@
+import React from 'react';
+import styled from 'styled-components';
+import { signInWithEmailAndPassword, getAuth, } from 'firebase/auth';
+import { initializeApp } from '@firebase/app';
+import {toast} from  'react-toastify'
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import 'react-toastify/dist/ReactToastify.css';
+
+const Container = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+height: 90vh;
+backgroundColor: red;
+
+form {
+    // border: 2px solid orange;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin: auto;
+    padding: 2rem;
+
+    label {
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin-top: 2rem;
+        
+    }
+
+    input {
+        border: none;
+        border-bottom: 1px solid;
+        // margin-top: 1rem;
+        padding: 10px;
+        outline: none;
+    }
+
+    button {
+        width: 25%;
+        padding: 7px;
+        margin: auto;
+        margin-top: 1.5rem;
+        font-weight: 600;
+        background: none;
+        cursor: pointer;
+    }
+`
+
+const Login = () => {
+    const navigate = useNavigate()
+    const [formData, setFormData]= useState({
+     Email:'',
+     Password:''
+    })
+    const{Email,Password} = formData
+ 
+    const onChange = (e)=>{
+     setFormData((prevState)=>({
+         ...prevState,
+         [e.target.id]: e.target.value
+     }))
+    }
+    const firebaseConfig = {
+        apiKey: "AIzaSyA3BCnL7a3LyvMnwnjI3Bzigx9VGAkVHG0",
+        authDomain: "ruby-homes.firebaseapp.com",
+        databaseURL:'https://ruby-homes-default-rtdb.firebaseio.com',
+        projectId: "ruby-homes",
+        storageBucket: "ruby-homes.appspot.com",
+        messagingSenderId: "34198362160",
+        appId: "1:34198362160:web:d34b554e6b7ebda675b5f5",
+        measurementId: "G-WG63H1601B"
+      }; 
+      const app = initializeApp(firebaseConfig)
+    const onSubmit = async (e)=>{
+        e.preventDefault();
+        const auth = getAuth(app)
+        try {
+            await signInWithEmailAndPassword(auth, Email, Password)
+            toast('Successful')
+            navigate('/landlord')
+        } catch (error) {
+            toast.error(error.message)
+        }
+    }
+  
+  return (
+    <Container>
+        <form action=""  onSubmit={onSubmit}>
+                <label>Email</label>
+                <input type="text" id='Email' value={Email} onChange={onChange} />
+                <label>Password</label>
+                <input type="password" id='Password' value={Password} onChange={onChange} />
+                <button>Sign In</button>
+        </form>
+    </Container>
+  )
+}
+
+export default Login;

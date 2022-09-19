@@ -12,7 +12,7 @@ const Navbar = () => {
             </div>
             <div className="nav-buttons">
                 <Link to="/register"><button className="register">Register</button></Link>
-                <button className="sign-in">Sign in</button>
+                <Link to="/Login"><button className="sign-in">Sign in</button></Link>
             </div>
         </nav>
      );

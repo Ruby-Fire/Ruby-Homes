@@ -1,6 +1,5 @@
 import React from 'react'
 import './Results.css'
-import CCHubLogo from "../../Assets/cc-hub-logo.png";
 
 
 function Results(props) {
