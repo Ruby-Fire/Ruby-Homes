@@ -1,56 +1,72 @@
-.Main-container{
+.Main-container {
     display: flex;
-    margin-top: 20px;
+    padding-top: 2rem;
 }
-.items-wrapper{
-    
+
+.items-wrapper {
     display: flex;
-    gap:  20px;
+    gap: 20px;
+    border: 1px solid;
+    width: 100%;
 }
-.check-board{
+
+.check-board {
     width: 20rem;
     height: 100%;
     align-items: center;
     background-color: #febb02;
-    margin-left:  4rem;
+    margin-left: 4rem;
     padding: 10px;
     border-radius: 10px;
-    position:sticky;
+    position: sticky;
+    left: 4rem;
     max-width: 20rem;
-    max-height: 300px;
+    max-height: 270px;
 }
-.destination{
+
+.destination {
     font-weight: 700;
     display: flex;
     flex-direction: column;
     gap: 5px;
     margin-bottom: 10px;
 }
-.destination> input{
-    font-size: 1.2rem;
-  
-}
-.property-type {
-        font-weight: 700;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 10px;
-        color: #555;
-        font-size:  12px;
-}
-.property-type> input {
-    width: 50px;
 
+.destination>input {
+    font-size: 1.2rem;
+    margin-top: 1rem;
 }
-.general-detail{
+
+.property-type {
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 12px;
+}
+
+.property-type>input {
+    width: 50px;
+}
+
+.general-detail {
     padding: 10px;
-    
 }
-.general-detail> button{
+
+.general-detail>button {
     font-weight: 500;
     padding: 10px;
     background-color: #0d1723;
     color: white;
     width: 100%;
     border: none;
- }
+    margin-top: 2rem;
+}
+
+.check-items {
+    border: 1px solid red;
+    width: 80%;
+    /* display: flex;
+    flex-wrap: wrap; */
+}

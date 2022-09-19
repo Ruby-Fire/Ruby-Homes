@@ -1,52 +1,58 @@
-.resuits-review{
+.results-review {
     display: flex;
     justify-content: center;
-    border: 2px  solid #e5e5e5;
-    border: radius 5px;
+    border: 2px solid #e5e5e5;
+    border-radius: 5px;
     padding: 10px;
-    gap: 20px;
-    margin-bottom: 20px;
+    gap: 1rem;
+    margin: 20px;
+    width: 40%;
 }
 
-.imgSelector{
-    width: 200px;
-    height: 200px;
-    
+.imgSelector {
+    width: 150px;
+    height: 150px;
 }
-.detail{
+
+.detail {
     display: flex;
     flex-direction: column;
     gap: 10px;
     flex: 2;
 }
-.title{
-    font-size: 20px;
+
+.title {
+    font-size: 15px;
     color: #0d1723;
 }
-.hours{
+
+.hours {
     font-size: 12px;
 }
-.aparament{
+
+.apartment {
     font-weight: bold;
+    font-size: 13px;
 }
-.price-range{
+
+.price-range {
     font-size: 15px;
     color: #000;
     font-weight: bold;
 }
-.Available-aparments{
-    font-size: 15px;
-}
-.ReBtn{
-   font-weight: 500;
-  color: white;
-   background-color: #0d1723;
-   font-weight: bold;
-   width: 100%;
-   padding: 10px 5px;
-   border: none;
-   border-radius: 5px;
-   cursor: pointer;
+
+.Available-aparments {
+    font-size: 12px;
 }
 
-
+.ReBtn {
+    font-weight: 500;
+    color: white;
+    background-color: #0d1723;
+    font-weight: bold;
+    width: 70%;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
