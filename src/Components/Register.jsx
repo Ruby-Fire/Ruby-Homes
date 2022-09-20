@@ -6,16 +6,15 @@ import { getAuth, createUserWithEmailAndPassword} from "firebase/auth";
 import { toast } from 'react-toastify';
 import { Fade } from "react-awesome-reveal";
 import 'react-toastify/dist/ReactToastify.css';
+import Illustration from "../Assets/signup-illu.png";
+
 
 
 const Container = styled.div`
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    height: 90vh;
 
     form {
-        // border: 2px solid orange;
         display: flex;
         flex-direction: column;
         width: 30vw;
@@ -32,7 +31,6 @@ const Container = styled.div`
         input {
             border: none;
             border-bottom: 1px solid;
-            // margin-top: 1rem;
             padding: 10px;
             outline: none;
         }
@@ -48,6 +46,23 @@ const Container = styled.div`
         }
     }
 `
+const ImageDivider = styled.div`
+        width: 50%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+
+    img {
+        width : 400px;
+    }
+`
+
+const RegisterForm = styled.div`
+    width: 50%;
+    display:flex;
+    overflow-y: scroll;
+`
+
 
 const Register = () => {
     const firebaseConfig = {
@@ -105,11 +120,14 @@ const Register = () => {
     }
    }
     return ( 
-        <Fade direction="right">
+        <Fade>
         <Container>
+            <ImageDivider>
+                <img src={Illustration} alt="" />
+            </ImageDivider>
+            <RegisterForm>
             <form action="post" onSubmit={onSubmit} >
                 <h1>Sign Up</h1>
-
                 <label>Full Name</label>
                 <input type="text" id="fullName" value={fullName} onChange={onChange}/>
                 <label>Email</label>
@@ -120,10 +138,9 @@ const Register = () => {
                 <input type="password"id="Password" value={Password} onChange={onChange} />
                 <label>Telephone</label>
                 <input type="text" placeholder="+234" id="Telephone" value={Telephone} onChange={onChange} />
-
-               
                 <button>Sign Up</button>
             </form>
+            </RegisterForm>
         </Container>
         </Fade>
      );
