@@ -1,0 +1,58 @@
+.WhyHold{
+    /* background: red; */
+    height: 100vh;
+}
+
+.WhyTop{
+    /* background: rebeccapurple; */
+    width: 80%;
+    padding: 2rem;
+    margin-left: 5rem;
+    
+}
+
+.WhyTop p{
+    margin-top: 1rem;
+    line-height: 25px;
+}
+
+.WhyTop h2{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.WhyTop h1{
+    margin-top: 1rem;
+}
+
+.FirstSect{
+    /* background: blue; */
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Sect1{
+    height: 200px;
+    width: 400px;
+    /* background: rebeccapurple; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 1rem;
+    padding-bottom: 20px;
+}
+
+.Sect1 p{
+    line-height: 25px;
+}
+
+.Sect1:hover{
+    border: 0.5 solid gray;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+

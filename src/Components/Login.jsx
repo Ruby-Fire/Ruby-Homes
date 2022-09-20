@@ -6,35 +6,31 @@ import {toast} from  'react-toastify'
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import 'react-toastify/dist/ReactToastify.css';
+import Illustration from "../Assets/login-illu.png";
 
 const Container = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-height: 90vh;
-backgroundColor: red;
+    display: flex;
+    height: 90vh;
 
 form {
-    // border: 2px solid orange;
     display: flex;
     flex-direction: column;
-    width: 30vw;
+    width: 70%;
     margin: auto;
     padding: 2rem;
 
     label {
         font-weight: 600;
         font-size: 1.1rem;
-        margin-top: 2rem;
-        
+        margin-top: 2rem;  
     }
 
     input {
         border: none;
         border-bottom: 1px solid;
-        // margin-top: 1rem;
         padding: 10px;
         outline: none;
+        
     }
 
     button {
@@ -46,6 +42,23 @@ form {
         background: none;
         cursor: pointer;
     }
+`
+
+const ImageContainer = styled.div`
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width : 400px;
+    }
+`
+
+const FormContainer = styled.div`
+    width: 50%;
+    display: flex;
+    align-items: center;
 `
 
 const Login = () => {
@@ -87,6 +100,10 @@ const Login = () => {
   
   return (
     <Container>
+        <ImageContainer>
+            <img src={Illustration} alt="" />
+        </ImageContainer>
+        <FormContainer>
         <form action=""  onSubmit={onSubmit}>
                 <label>Email</label>
                 <input type="text" id='Email' value={Email} onChange={onChange} />
@@ -94,6 +111,7 @@ const Login = () => {
                 <input type="password" id='Password' value={Password} onChange={onChange} />
                 <button>Sign In</button>
         </form>
+        </FormContainer>
     </Container>
   )
 }
