@@ -105,7 +105,7 @@ const Register = () => {
     }
    }
     return ( 
-        <Fade direction="left">
+        <Fade direction="right">
         <Container>
             <form action="post" onSubmit={onSubmit} >
                 <h1>Sign Up</h1>
