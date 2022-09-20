@@ -7,6 +7,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import 'react-toastify/dist/ReactToastify.css';
 import Illustration from "../Assets/login-illu.png";
+import { Fade } from 'react-awesome-reveal';
 
 const Container = styled.div`
     display: flex;
@@ -99,6 +100,7 @@ const Login = () => {
     }
   
   return (
+    <Fade>
     <Container>
         <ImageContainer>
             <img src={Illustration} alt="" />
@@ -113,6 +115,7 @@ const Login = () => {
         </form>
         </FormContainer>
     </Container>
+    </Fade>
   )
 }
 
