@@ -4,6 +4,7 @@ import Landlord from "./Components/Landlord";
 import Navbar from "./Components/Navbar/Navbar";
 import Register from "./Components/Register";
 import Rent from "./Components/Rent/Rent";
+import Login from "./Components/Login";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/register" element={<Register/>}/>
         <Route path="/rent" element={<Rent/>}/>
         <Route path="/Home" element={<Rent/>}/>
+        <Route path="/Login" element={<Login/>}/>
       </Routes>
     </div>
     </BrowserRouter>
