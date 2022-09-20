@@ -1,0 +1,63 @@
+body{
+    /* background: red; */
+}
+
+.HeroHold{
+    width: 100%;
+    height: 90vh;
+}
+
+.HerolHolder{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.TextHold{
+    width: 60%;
+    height: 100%;
+    /* background: red; */
+    background-color: #0d1723;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem;
+    line-height: 4rem;
+}
+
+.TextHold h1{
+    font-size: 3rem;
+}
+
+.TextHold button{
+    width: 200px;
+    height: 60px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-top: 50px;
+    background: none;
+    border: 3px solid white;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+}
+
+.TextHold button:hover{
+    border: 3px solid black;
+    color: white;
+}
+
+.ImageHold{
+    width: 60%;
+    overflow: hidden;
+}
+
+.ImageHold img{
+    width: 100%;
+    height: 100%;
+}
+
