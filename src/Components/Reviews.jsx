@@ -28,8 +28,7 @@ const Reviews = () => {
         
 
         img {
-            border: 1px solid ;
-            width: 15rem;
+            width: 100px;
         }
 
         div {
@@ -49,7 +48,7 @@ const Reviews = () => {
             <p>Lorem ipsum dolor sit amet consectetur, elit. Mollitia, delectus error. Libero.</p>
             <div className="review-section">
                 <Review>
-                    <img src="" alt="" />
+                    <img src="https://xsgames.co/randomusers/assets/avatars/male/37.jpg" alt="" />
                     <div>
                         <h4>Bojack Horseman</h4>
                         <p>Lorem, ipsum dolor sit amet consectetur elit. Consectetur, soluta. Ex asperiores 
@@ -58,7 +57,7 @@ const Reviews = () => {
                 </Review>
 
                 <Review>
-                    <img src="" alt="" />
+                    <img src="https://xsgames.co/randomusers/assets/avatars/female/34.jpg" alt="" />
                     <div>
                         <h4>Bojack Horseman</h4>
                         <p>Lorem, ipsum dolor sit amet consectetur elit. Consectetur, soluta. Ex asperiores 
@@ -67,7 +66,7 @@ const Reviews = () => {
                 </Review>
 
                 <Review>
-                    <img src="" alt="" />
+                    <img src="https://xsgames.co/randomusers/assets/avatars/female/31.jpg" alt="" />
                     <div>
                         <h4>Bojack Horseman</h4>
                         <p>Lorem, ipsum dolor sit amet consectetur elit. Consectetur, soluta. Ex asperiores 
@@ -76,7 +75,7 @@ const Reviews = () => {
                 </Review>
 
                 <Review>
-                    <img src="" alt="" />
+                    <img src="https://xsgames.co/randomusers/assets/avatars/male/34.jpg" alt="" />
                     <div>
                         <h4>Bojack Horseman</h4>
                         <p>Lorem, ipsum dolor sit amet consectetur elit. Consectetur, soluta. Ex asperiores 
@@ -85,7 +84,7 @@ const Reviews = () => {
                 </Review>
 
                 <Review>
-                    <img src="" alt="" />
+                    <img src="https://xsgames.co/randomusers/assets/avatars/female/30.jpg" alt="" />
                     <div>
                         <h4>Bojack Horseman</h4>
                         <p>Lorem, ipsum dolor sit amet consectetur elit. Consectetur, soluta. Ex asperiores 
@@ -94,7 +93,7 @@ const Reviews = () => {
                 </Review>
 
                 <Review>
-                    <img src="" alt="" />
+                    <img src="https://xsgames.co/randomusers/assets/avatars/male/7.jpg" alt="" />
                     <div>
                         <h4>Bojack Horseman</h4>
                         <p>Lorem, ipsum dolor sit amet consectetur elit. Consectetur, soluta. Ex asperiores 

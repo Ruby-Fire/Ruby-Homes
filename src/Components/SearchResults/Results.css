@@ -5,13 +5,13 @@
     border-radius: 5px;
     padding: 10px;
     gap: 1rem;
-    margin: 20px;
-    width: 40%;
+    margin: 1rem;
+    width: 45%;
 }
 
 .imgSelector {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
 
 .detail {
@@ -55,4 +55,5 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin: 1rem 0;
 }
