@@ -1,5 +1,6 @@
 import Home from "./Components/Home";
 import { BrowserRouter , Routes , Route } from "react-router-dom";
+// import Landlord from "./Components/Landlord/Landlord";
 import Landlord from "./Components/Landlord";
 import Navbar from "./Components/Navbar/Navbar";
 import Register from "./Components/Register";
