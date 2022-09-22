@@ -1,9 +1,10 @@
 import React from 'react';
 import './Results.css';
 import apartment from '../../Assets/apartment.jpg'
+import {Link} from "react-router-dom";
 
 
-function Results(props) {
+function Results () {
   return (
         <div className='results-review'>
             <img src={apartment} alt="" className='imgSelector' />
@@ -13,7 +14,7 @@ function Results(props) {
                 <h4 className='apartment'>Studio apartment with Air conditioning</h4>
                 <p className='Available-aparments'>Entire studio . 1 bathroom . 21m 1 full bed</p>
                 <h3 className='price-tag'> $112</h3>
-                <button className='ReBtn'> See availabity</button>
+                <Link to="/Booking"><button className='ReBtn'> see availabity</button></Link>
             </div>
         </div>
   )
