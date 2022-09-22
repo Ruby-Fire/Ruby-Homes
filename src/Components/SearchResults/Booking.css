@@ -1,0 +1,76 @@
+.HotelWrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.BodyContainer{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rubyHomes{
+    text-transform: uppercase;
+}
+.Reserve{
+    position: absolute;
+    top: 7rem;
+    left: 50rem;
+    right: 0;
+    color: #fff;
+    font-weight: 500;
+    background-color: #0d1723;
+    font-weight: bold;
+    padding: 10px 5px;
+    width: 15%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.ImageDivider{ 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ImageDivider img{
+    width: 300px;
+    height: 200px;
+    padding: 5px ;
+}
+.StayInHeart{
+    display: flex;
+}
+.Krakow{
+   flex: 3;
+   
+}
+.Krakow p{
+  /* border: 3px solid red; */
+  width: 70%;
+}
+.PerfectForyou{
+    flex: 1;
+    background-color: #ebf3ff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    margin-right: 8rem;
+    gap: 20px;
+}
+.PerfectForyou p {
+    font-size:  10px ;
+    width: 15rem;
+}
+.PerfectForyou button{
+        border: none;
+        padding: 10px 20px;
+        background-color: #0d1723;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 5px;
+}
