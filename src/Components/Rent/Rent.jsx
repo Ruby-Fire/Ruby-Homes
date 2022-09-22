@@ -7,6 +7,7 @@ function Rent() {
         <div> 
             <div className='Main-container'>
                 <div className='items-wrapper'>
+                    <div className='search-container'>
                     <div className='check-board'>
                         <div className='destination'>
                              <label>Search</label>
@@ -27,6 +28,7 @@ function Rent() {
                              </div>
                               <button>Search</button>
                          </div>
+                    </div>
                     </div>
                     <div className='check-items'>
                         <Results />

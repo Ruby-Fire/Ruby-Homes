@@ -6,21 +6,22 @@
 .items-wrapper {
     display: flex;
     gap: 20px;
-    border: 1px solid;
     width: 100%;
 }
 
+.search-container {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
 .check-board {
-    width: 20rem;
-    height: 100%;
     align-items: center;
     background-color: #febb02;
-    margin-left: 4rem;
     padding: 10px;
     border-radius: 10px;
     position: sticky;
-    left: 4rem;
-    max-width: 20rem;
+    width: 70%;
     max-height: 270px;
 }
 
@@ -65,8 +66,8 @@
 }
 
 .check-items {
-    border: 1px solid red;
-    width: 80%;
-    /* display: flex;
-    flex-wrap: wrap; */
+    width: 70%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
 }
